@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samrat Sharma Furniture | Contact</title>
+  <meta name="description" content="Contact Samrat Sharma Furniture by phone, WhatsApp, or contact form.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Samrat Sharma Furniture</a>
+      <button class="menu-btn" id="menuBtn" type="button">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a data-nav href="index.html">Home</a></li>
+        <li><a data-nav href="about.html">About</a></li>
+        <li><a data-nav href="products.html">Products</a></li>
+        <li><a data-nav href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="contact-layout">
+        <div class="panel">
+          <p><strong>Owner:</strong> Dharmendra Sharma</p>
+          <p><strong>Phone:</strong> <a href="tel:+919835748312">+91 98357 48312</a></p>
+          <p><strong>Email:</strong> <a href="mailto:17sharmadh@gmail.com">17sharmadh@gmail.com</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/918292077357?text=Hello%20Samrat%20Sharma%20Furniture%2C%20I%20want%20details." target="_blank" rel="noopener">+91 82920 77357</a></p>
+          <p><strong>Address:</strong> Lalpur, opposite Hotel Arya, Ranchi, Jharkhand</p>
+          <a class="btn btn-outline" href="tel:+919835748312">Call Now</a>
+        </div>
+
+        <div class="panel">
+          <div id="formStatus" hidden></div>
+          <!-- PHP-based shared-hosting form endpoint. -->
+          <form method="POST" action="contact.php">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required>
+
+            <label for="interest">Interested In</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Plywood">Plywood</option>
+              <option value="Bulk Order">Bulk Order</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> Samrat Sharma Furniture</div>
+  </footer>
+
+  <a class="btn btn-primary floating-wa" href="https://wa.me/918292077357?text=Hello%20Samrat%20Sharma%20Furniture%2C%20I%20want%20details." target="_blank" rel="noopener">WhatsApp</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

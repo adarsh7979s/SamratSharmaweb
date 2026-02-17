@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samrat Sharma Furniture | Furniture, Hardware & Plywood</title>
+  <meta name="description" content="Samrat Sharma Furniture offers quality furniture, hardware, and plywood for homes, offices, and projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">Samrat Sharma Furniture</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="openCartBtn" type="button" aria-label="Open cart">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Trusted Local Business</p>
+          <h1>Furniture, Hardware & Plywood Under One Roof</h1>
+          <p>
+            Samrat Sharma Furniture supplies durable furniture, reliable hardware, and quality plywood for homes,
+            interiors, and commercial spaces.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#products">View Products</a>
+            <a class="btn btn-secondary" href="#contact">Request a Quote</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Business Highlights</h2>
+          <ul>
+            <li>Custom and ready-made furniture options</li>
+            <li>Essential hardware and fittings available</li>
+            <li>Plywood sheets in multiple grades and sizes</li>
+            <li>Bulk order support for contractors and builders</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="section-title">What We Sell</h2>
+        <div class="category-grid">
+          <article class="category-card">
+            <h3>Furniture</h3>
+            <p>Sofas, beds, tables, wardrobes, office furniture, and storage units.</p>
+          </article>
+          <article class="category-card">
+            <h3>Hardware</h3>
+            <p>Hinges, handles, locks, channels, screws, and installation accessories.</p>
+          </article>
+          <article class="category-card">
+            <h3>Plywood</h3>
+            <p>Commercial, marine, and laminated plywood in different thicknesses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Display Catalog (50+ Products)</h2>
+          <div class="filters">
+            <label for="searchInput" class="sr-only">Search products</label>
+            <input type="text" id="searchInput" placeholder="Search product name...">
+            <label for="categoryFilter" class="sr-only">Filter category</label>
+            <select id="categoryFilter">
+              <option value="all">All Categories</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Plywood">Plywood</option>
+            </select>
+            <label for="sortFilter" class="sr-only">Sort products</label>
+            <select id="sortFilter">
+              <option value="relevance">Sort: Relevance</option>
+              <option value="priceLow">Price: Low to High</option>
+              <option value="priceHigh">Price: High to Low</option>
+              <option value="ratingHigh">Top Rated</option>
+              <option value="discountHigh">Best Discount</option>
+            </select>
+          </div>
+        </div>
+        <p id="resultsText" class="results-text">Showing 0 products</p>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        <div class="load-more-wrap">
+          <button class="btn btn-secondary" id="loadMoreBtn" type="button">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-wrap">
+        <h2 class="section-title">About Samrat Sharma Furniture</h2>
+        <p>
+          We are a customer-first furniture and building material business focused on practical quality and fair pricing.
+          Whether you are furnishing a home, renovating a space, or working on a site project, we help you source the
+          right products quickly and reliably.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact & Inquiry</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Business Contact</h3>
+            <p><strong>Shop Name:</strong> Samrat Sharma Furniture</p>
+            <p><strong>Owner:</strong> Dharmendra Sharma</p>
+            <p><strong>Phone:</strong> <a href="tel:+919835748312">+91 98357 48312</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/918292077357?text=Hello%20Samrat%20Sharma%20Furniture%2C%20I%20want%20details." target="_blank" rel="noopener">+91 82920 77357</a></p>
+            <p><strong>Email:</strong> <a href="mailto:17sharmadh@gmail.com">17sharmadh@gmail.com</a></p>
+            <p><strong>Address:</strong> Lalpur, opposite Hotel Arya, Ranchi, Jharkhand</p>
+          </div>
+
+          <form class="contact-form" action="https://formsubmit.co/17sharmadh@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Inquiry - Samrat Sharma Furniture">
+            <input type="hidden" name="_captcha" value="false">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required>
+
+            <label for="interest">Interested In</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select one</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Plywood">Plywood</option>
+              <option value="Bulk Order">Bulk Order</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> Samrat Sharma Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button id="closeCartBtn" type="button" class="icon-btn" aria-label="Close cart">X</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <p><strong>Total:</strong> <span id="cartTotal">Rs. 0</span></p>
+      <div class="cart-actions">
+        <button id="clearCartBtn" class="btn btn-secondary" type="button">Clear Cart</button>
+        <button id="orderWhatsappBtn" class="btn btn-primary" type="button">Order on WhatsApp</button>
+      </div>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+
+  <div class="detail-backdrop" id="detailBackdrop" hidden></div>
+  <section class="product-detail-modal" id="productDetailModal" hidden aria-hidden="true">
+    <div class="product-detail-shell">
+      <button id="closeDetailBtn" class="icon-btn detail-close-btn" type="button" aria-label="Close details">X</button>
+      <div class="detail-layout">
+        <div class="detail-thumbs" id="detailThumbs"></div>
+        <div class="detail-main-image-wrap">
+          <img id="detailMainImage" class="detail-main-image" src="images/furniture.svg" alt="Product image">
+        </div>
+        <div class="detail-info">
+          <p class="pill" id="detailCategory">Furniture</p>
+          <h3 id="detailTitle">Product Name</h3>
+          <p class="sku" id="detailSku">SKU</p>
+          <p class="desc" id="detailDesc">Description</p>
+          <p class="rating" id="detailRating">Rating: 4.5 (100)</p>
+          <div class="price-row">
+            <span class="price" id="detailPrice">Rs. 0</span>
+            <span class="mrp" id="detailMrp">Rs. 0</span>
+            <span class="discount-inline" id="detailDiscount">0% OFF</span>
+          </div>
+          <p class="stock in" id="detailStock">In Stock</p>
+          <div class="detail-order-box">
+            <label for="detailQty"><strong>Quantity</strong></label>
+            <select id="detailQty">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            <div class="detail-action-grid">
+              <button id="detailAddCartBtn" class="btn btn-primary" type="button">Add to Cart</button>
+              <button id="detailOrderBtn" class="btn btn-buy" type="button">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

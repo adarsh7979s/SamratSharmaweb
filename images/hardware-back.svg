@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Hardware back angle">
+  <defs>
+    <linearGradient id="hg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ced9e2"/>
+      <stop offset="1" stop-color="#7f97a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#hg3)"/>
+  <rect x="250" y="290" width="700" height="220" rx="26" fill="#eef3f8" opacity="0.78"/>
+  <rect x="360" y="545" width="480" height="72" rx="16" fill="#5d7383"/>
+  <text x="600" y="145" text-anchor="middle" font-size="62" fill="#2b3d49" font-family="Arial">HARDWARE - BACK VIEW</text>
+</svg>

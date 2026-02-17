@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Plywood image">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efdfbe"/>
+      <stop offset="1" stop-color="#c79b57"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g3)"/>
+  <rect x="260" y="260" width="680" height="360" fill="#f9f0de" opacity="0.72"/>
+  <rect x="300" y="300" width="680" height="360" fill="#eed8b5" opacity="0.7"/>
+  <text x="600" y="170" text-anchor="middle" font-size="68" fill="#5f4015" font-family="Arial">PLYWOOD</text>
+</svg>

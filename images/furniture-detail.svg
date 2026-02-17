@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Furniture detail angle">
+  <defs>
+    <linearGradient id="fg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7dfbf"/>
+      <stop offset="1" stop-color="#cd834e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#fg4)"/>
+  <rect x="220" y="250" width="760" height="360" rx="34" fill="#fff6ea" opacity="0.82"/>
+  <circle cx="500" cy="430" r="120" fill="#d18d5a"/>
+  <circle cx="730" cy="430" r="120" fill="#b86f3d"/>
+  <text x="600" y="145" text-anchor="middle" font-size="62" fill="#5d2a12" font-family="Arial">FURNITURE - DETAIL</text>
+</svg>

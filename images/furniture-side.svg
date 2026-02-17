@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Furniture side angle">
+  <defs>
+    <linearGradient id="fg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6dcb9"/>
+      <stop offset="1" stop-color="#bf7a47"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#fg2)"/>
+  <rect x="180" y="350" width="840" height="210" rx="24" fill="#fff3e3" opacity="0.72"/>
+  <rect x="240" y="560" width="70" height="120" fill="#6f3418"/>
+  <rect x="900" y="560" width="70" height="120" fill="#6f3418"/>
+  <text x="600" y="145" text-anchor="middle" font-size="62" fill="#5d2a12" font-family="Arial">FURNITURE - SIDE VIEW</text>
+</svg>

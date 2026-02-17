@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Furniture back angle">
+  <defs>
+    <linearGradient id="fg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2cfa2"/>
+      <stop offset="1" stop-color="#b76a33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#fg3)"/>
+  <rect x="240" y="320" width="720" height="280" rx="28" fill="#fff2df" opacity="0.78"/>
+  <rect x="280" y="580" width="90" height="95" fill="#70371a"/>
+  <rect x="830" y="580" width="90" height="95" fill="#70371a"/>
+  <text x="600" y="145" text-anchor="middle" font-size="62" fill="#5d2a12" font-family="Arial">FURNITURE - BACK VIEW</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Furniture image">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4d4ad"/>
+      <stop offset="1" stop-color="#d58f57"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g1)"/>
+  <rect x="220" y="360" width="760" height="180" rx="18" fill="#fff6ea" opacity="0.7"/>
+  <rect x="260" y="520" width="50" height="120" fill="#7e3a1a"/>
+  <rect x="890" y="520" width="50" height="120" fill="#7e3a1a"/>
+  <text x="600" y="160" text-anchor="middle" font-size="68" fill="#5d2a12" font-family="Arial">FURNITURE</text>
+</svg>

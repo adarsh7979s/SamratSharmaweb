@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Plywood side angle">
+  <defs>
+    <linearGradient id="pg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efdfbe"/>
+      <stop offset="1" stop-color="#c79b57"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#pg2)"/>
+  <rect x="200" y="240" width="820" height="350" fill="#f7ecd8" opacity="0.78"/>
+  <rect x="250" y="280" width="820" height="350" fill="#e8d1ab" opacity="0.68"/>
+  <text x="600" y="145" text-anchor="middle" font-size="62" fill="#5f4015" font-family="Arial">PLYWOOD - SIDE VIEW</text>
+</svg>
