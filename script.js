@@ -181,6 +181,7 @@ const openCartBtn = document.getElementById("openCartBtn");
 const closeCartBtn = document.getElementById("closeCartBtn");
 const clearCartBtn = document.getElementById("clearCartBtn");
 const orderWhatsappBtn = document.getElementById("orderWhatsappBtn");
+const contactForm = document.getElementById("contactForm");
 
 const detailBackdrop = document.getElementById("detailBackdrop");
 const detailModal = document.getElementById("productDetailModal");
@@ -598,6 +599,29 @@ clearCartBtn.addEventListener("click", () => {
   renderCart();
 });
 orderWhatsappBtn.addEventListener("click", orderOnWhatsapp);
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = document.getElementById("name")?.value.trim() || "";
+    const phone = document.getElementById("phone")?.value.trim() || "";
+    const interest = document.getElementById("interest")?.value.trim() || "";
+    const message = document.getElementById("message")?.value.trim() || "";
+
+    const waMessage = [
+      "Hello Samrat Sharma Furniture,",
+      "",
+      "New Inquiry:",
+      `Name: ${name}`,
+      `Phone: ${phone}`,
+      `Interested In: ${interest}`,
+      `Message: ${message}`
+    ].join("\n");
+
+    const waUrl = `https://wa.me/${WHATSAPP_ORDER_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+    window.open(waUrl, "_blank");
+  });
+}
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {

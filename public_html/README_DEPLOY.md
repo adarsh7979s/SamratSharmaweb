@@ -1,42 +1,73 @@
-# Deploy Guide (cPanel / FTP)
+# Static Deployment Guide - Samrat Sharma Furniture
 
-This website is fully compatible with shared hosting that supports static files and PHP.
+This website is 100% static and works on:
+- Shared hosting (cPanel / FTP)
+- Render Static Site
+- Any static hosting platform
 
-## Folder to Upload
+It uses only:
+- HTML
+- CSS
+- JavaScript
 
-Upload **everything inside `public_html`** to your hosting account's `public_html` directory.
+No PHP, Node.js, Python, or build step is required.
 
-## cPanel File Manager Steps
+## Project Structure
 
-1. Open cPanel.
-2. Go to **File Manager**.
-3. Open your server `public_html` directory.
-4. Upload these files/folders:
-   - `index.html`
-   - `about.html`
-   - `products.html`
-   - `contact.html`
-   - `contact.php`
-   - `assets/` folder
-5. Visit your domain to verify pages load.
+```text
+public_html/
+  index.html
+  about.html
+  products.html
+  contact.html
+  assets/
+    css/
+      styles.css
+    js/
+      main.js
+    images/
+      furniture.svg
+      hardware.svg
+      plywood.svg
+```
 
-## FTP Steps
+## Contact Form Setup (FormSubmit)
 
-1. Connect with FileZilla (or any FTP client).
-2. Open remote folder: `public_html`.
-3. Upload all files from local `public_html` folder.
+The contact form in `contact.html` submits to:
+`https://formsubmit.co/17sharmadh@gmail.com`
 
-## Contact Form Notes
+Setup steps:
+1. Deploy the site once.
+2. Submit the contact form.
+3. Open `17sharmadh@gmail.com` inbox and confirm the FormSubmit activation email.
+4. After activation, all new form entries will come to this email.
 
-- Current form posts to `contact.php` (PHP mail).
-- Email destination is set to: `17sharmadh@gmail.com`.
-- If your host blocks `mail()`, replace form action in `contact.html` with a third-party endpoint like FormSubmit.
+Optional:
+1. If you want captcha, set `_captcha` to `true` in `contact.html`.
+2. If you want a custom thank-you page, change the `_next` hidden input in `contact.html`.
 
-## No Build Required
+## Deploy via cPanel File Manager
 
-- No Node.js
-- No React server code
-- No Python/FastAPI
-- No compile/build step
+1. Open cPanel -> File Manager.
+2. Open server folder `public_html`.
+3. Upload all files from your local `public_html` folder.
+4. Ensure `index.html` is directly inside server `public_html`.
+5. Visit your domain and test all pages and form.
 
-Just upload and run.
+## Deploy via FTP (FileZilla)
+
+1. Connect to hosting with FTP credentials.
+2. Open remote folder `public_html`.
+3. Upload local `public_html` contents.
+4. Overwrite old files if prompted.
+
+## Deploy on Render (Static Site)
+
+1. Push this project to GitHub.
+2. In Render dashboard: `New +` -> `Static Site`.
+3. Connect your GitHub repo.
+4. Set:
+   - Build Command: leave empty
+   - Publish Directory: `public_html`
+5. Click `Create Static Site`.
+6. Test all pages and submit the contact form once for FormSubmit activation.
