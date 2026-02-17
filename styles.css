@@ -540,26 +540,32 @@ textarea {
   position: fixed;
   inset: 0;
   z-index: 61;
-  display: grid;
-  place-items: center;
-  padding: 1rem;
+  display: block;
+  padding: 0;
 }
 
 .product-detail-shell {
-  width: min(1240px, 96vw);
-  max-height: 92vh;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
   overflow: auto;
   background: #fff;
-  border-radius: 14px;
-  border: 1px solid var(--line);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1rem 1.2rem;
 }
 
 .detail-close-btn {
   position: absolute;
   right: 12px;
+  top: 12px;
+}
+
+.detail-back-btn {
+  position: absolute;
+  left: 12px;
   top: 12px;
 }
 
@@ -603,7 +609,7 @@ textarea {
 
 .detail-main-image {
   width: 100%;
-  height: min(64vh, 540px);
+  height: min(78vh, 760px);
   object-fit: contain;
   display: block;
 }
@@ -679,7 +685,7 @@ body.modal-open {
   }
 
   .product-detail-shell {
-    padding: 0.8rem;
+    padding: 0.75rem;
   }
 
   .detail-layout {
